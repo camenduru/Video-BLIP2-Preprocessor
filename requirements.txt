@@ -5,3 +5,4 @@ pillow
 decord
 transformers
 av
+einops
