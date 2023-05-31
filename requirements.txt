@@ -6,3 +6,4 @@ decord
 transformers
 av
 einops
+accelerate
