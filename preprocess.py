@@ -85,9 +85,9 @@ class PreProcessVideos:
     def load_blip(self):
         print("Loading BLIP2")
 
-        processor = Blip2Processor.from_pretrained("Salesforce/blip2-opt-6.7b-coco")
+        processor = Blip2Processor.from_pretrained("Salesforce/blip2-opt-2.7b-coco")
         model = Blip2ForConditionalGeneration.from_pretrained(
-            "Salesforce/blip2-opt-6.7b-coco", torch_dtype=torch.float16
+            "Salesforce/blip2-opt-2.7b-coco", torch_dtype=torch.float16
         )
         model.to(self.device)
 
