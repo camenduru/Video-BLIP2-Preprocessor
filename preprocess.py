@@ -150,6 +150,7 @@ class PreProcessVideos:
 
     # Main loop for processing all videos.
     def process_videos(self):
+        total = 0
         self.load_blip()
         config = self.build_base_config()
 
@@ -216,7 +217,9 @@ class PreProcessVideos:
 
                             else:
                                 video_config["data"].append(video_data)
-
+                        print(video_config)
+                        total = total+1
+                        print(total)
                         config['data'].append(video_config)
 
                     except Exception as e:
